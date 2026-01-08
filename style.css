@@ -1,0 +1,225 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --bg-dark: #000000;
+    --bg-light: #1d1d1d;
+    --primary: #FF00FF;
+    --secundary: #b3b62f;
+    --text-main: #eaeaea;
+    --text-muted: #ffffff;
+    --text-realm: #ffffff;
+    --radius: 12px;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #000000, #1f1f2e);
+    padding: 40px 20px 60px 20px;
+    text-align: center;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    position: relative;
+}
+
+header img {
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 40%; 
+    border: 2px solid var(--primary);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* NAV */
+nav {
+    background-color: var(--bg-light);
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: var(--radius);
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+section {
+    margin-bottom: 50px;
+    background-color: var(--bg-light);
+    padding: 30px 25px;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+section p {
+    color: var(--text-muted);
+}
+
+
+section ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+section ul li {
+    background-color: var(--bg-dark);
+    padding: 12px 16px;
+    border-left: 4px solid var(--primary);
+    margin-bottom: 10px;
+    border-radius: var(--radius);
+}
+
+
+#contato p {
+    font-size: 1.1rem;
+}
+
+
+footer {
+    background-color: var(--bg-light);
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header img {
+        width: 100px;
+    }
+}
+
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; 
+    margin-left: 15px;
+    padding: 6px 12px;
+    background-color: #24292e; 
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-github svg {
+    fill: #fff;
+}
+
+.btn-github:hover {
+    background-color: #444c56; 
+    transform: translateY(-2px);
+}
+
+#jogo h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+
+.jogo-link {
+    display: block; 
+    width: 35%; 
+    margin: 0 auto 15px auto; 
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 3px solid var(--primary);
+}
+
+
+.jogo-link img {
+    display: block;
+    width: 100%; 
+    border-radius: var(--radius);
+}
+
+
+.jogo-link:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-color: #441e44;
+}
+
+
+#jogo p {
+    color: var(--text-realm);
+    margin-top: 30px;
+    max-width: 700px;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+#jogo h3 {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 2rem;
+    color: var(--secundary);
+    margin-bottom: 20px;
+    text-align: center;
+}
